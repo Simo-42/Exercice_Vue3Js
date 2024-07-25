@@ -11,7 +11,7 @@
 
 
 <script setup>
-import { defineProps, ref } from 'vue'
+import { defineProps, ref , defineEmits } from 'vue'
 import '../assets/styles/notification.css'
 
 import WarningIcone from '../assets/icons/Warning.svg'
@@ -50,7 +50,7 @@ import DangerIcone from '../assets/icons/Danger.svg'
 	},
 }
 
-const props = defineProps({
+const props = defineProps({ // argument de la notification
 	type : {
 		type: String,
 		required: true
@@ -63,14 +63,22 @@ const props = defineProps({
 	message: {
 		type: String,
 		required: true
-	}
+	},
+	index : {
+		type: Number,
+		required: true
+	},
 })
 
+const emit = defineEmits(['close'])  // Permettre de comuniquer avec le parent
 const config = configurations[props.type]
 const visible = ref(true)
+
 function close ()
 {
+	emit('close', props.index) // envoie l'index au parent
 	visible.value = false
+	// console.log('props.index', props.index)
 }
 // console.log(config)
 

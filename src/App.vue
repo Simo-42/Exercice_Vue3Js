@@ -57,7 +57,7 @@ const remove_notification = (index) => {
 };
 
 const add_notification = () => {
-  if (notifications.value.length >= 5) {
+  if (notifications.value.length > 5) {
     notifications.value.shift();
   }
 

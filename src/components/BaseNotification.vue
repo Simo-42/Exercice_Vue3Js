@@ -1,5 +1,5 @@
 <template>
-	<div v-if="config" :style="config.style" class="notification"> <!-- uniquement si config existe le dom sera rendu -->
+	<div v-if="visible" :style="config.style" class="notification"> <!-- visible gere la fermeture de la modale -->
 		<div class="icon-and-title">
 			<img :src="config.icon" alt="icon" class="icon" />
 			<h2 class="title">{{ title }}</h2>
@@ -11,7 +11,7 @@
 
 
 <script setup>
-import { defineProps, computed } from 'vue'
+import { defineProps, ref } from 'vue'
 import '../assets/styles/notification.css'
 
 import WarningIcone from '../assets/icons/Warning.svg'
@@ -67,7 +67,11 @@ const props = defineProps({
 })
 
 const config = configurations[props.type]
-
+const visible = ref(true)
+function close ()
+{
+	visible.value = false
+}
 // console.log(config)
 
 </script>

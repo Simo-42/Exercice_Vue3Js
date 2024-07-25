@@ -27,7 +27,7 @@ import DangerIcone from '../assets/icons/Danger.svg'
 			color: '#BEAD86',
 		},
 	},
-	'sucess' : {
+	'success' : {
 		icon: SuccessIcone,
 		style: {
 			backgroundColor: '#E4F7E8',

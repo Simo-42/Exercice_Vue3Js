@@ -6,7 +6,24 @@
       purus sit amet luctus venenatis, lectus 
       magna fringilla urna, porttitor" />
 
+      <Notification type="sucess" title="Modal Window"
+      message="lorem ipsum dolor sit amet,
+      consectetur adipiscing elit ut aliqum,
+      purus sit amet luctus venenatis, lectus
+      magna fringilla urna, porttitor" />
      
+      <Notification type="info" title="Modal Window"
+      message="lorem ipsum dolor sit amet,
+      consectetur adipiscing elit ut aliqum,
+      purus sit amet luctus venenatis, lectus
+      magna fringilla urna, porttitor" />
+      
+      <Notification type="danger" title="Modal Window"
+      message="lorem ipsum dolor sit amet,
+      consectetur adipiscing elit ut aliqum,
+      purus sit amet luctus venenatis, lectus
+      magna fringilla urna, porttitor" />
+
 
   </main>
 </template>

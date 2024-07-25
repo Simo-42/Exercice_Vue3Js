@@ -35,7 +35,7 @@ import DangerIcone from '../assets/icons/Danger.svg'
 		},
 	},
 	'info' : {
-		icon: WarningIcone,
+		icon: InfoIcone,
 		style: {
 			backgroundColor: '#E4E9F7',
 			color: '#96A8D8',

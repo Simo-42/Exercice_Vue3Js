@@ -12,7 +12,7 @@ Ce projet est une application Vue.js 3.
 1. Clonez le dépôt :
 
     ```bash
-    git clone https://github.com/votre-utilisateur/votre-projet.git
+    git clone git@github.com:Yonix49/Exercice_Vue3Js.git
     ```
 
 2. Accédez au répertoire du projet :

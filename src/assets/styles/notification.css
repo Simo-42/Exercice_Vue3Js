@@ -1,0 +1,62 @@
+.notification {
+	width: 500px; 
+	padding: 20px;
+	border-radius: 10px; 
+	margin: 10px 0;
+	border: 1px solid #f5c6cb;
+	background-color: #f8d7da;
+	color: #721c24;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border: 3px solid; 
+
+}
+
+.icon-and-title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+
+.icon {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+.title { 
+	margin: 1;
+	margin-left: 1px; 
+	font-size: 1.5em;
+	color: black;
+	font-weight: 600;
+
+}
+
+.message  {
+	margin: 0;
+	text-align: start;
+	margin-left: 34px;
+	margin-right: 0px;
+	margin-top: 5px;
+	color:#757575;
+  	font-size: 1.1em; 
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5em; 
+  cursor: pointer;
+  line-height: 1; 
+  transform: scaleX(1.1); 
+  transform: scaleY(0.9); 
+  outline: none; 
+
+}
